@@ -12,10 +12,10 @@ library(magick)
   # Create GIF
   
   (animation1 <- image_animate(logos))
-  image_write(animation1, "man/figures/anim1.gif")
+  image_write(animation1)
   
   # Morph effect  <-- result of this is shown
   
   (animation2 <- image_animate(image_morph(logos, frames = 10)))
-  image_write(animation2, "man/figures/anim2.gif")
+  image_write(animation2)
   
